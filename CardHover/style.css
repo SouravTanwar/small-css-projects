@@ -1,0 +1,78 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.card {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    /* Cool linear gradient */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    position: relative;
+    width: 300px;
+    height: 400px;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    /* Animated gradient on hover */
+}
+
+.card-image {
+    background-image: url('https://via.placeholder.com/300x200');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .card-image {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+.card-content p {
+    color: #ddd;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.card:hover .card-content p {
+    opacity: 1;
+    transform: translateY(0);
+}
