@@ -1,0 +1,176 @@
+/* General Styles */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+/* Typing Effect */
+.typing-container {
+    margin: 20px 0;
+}
+
+.typing-text {
+    font-family: 'Courier New', monospace;
+    font-size: 24px;
+    white-space: nowrap;
+    border-right: 2px solid;
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+    width: 100%;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+
+    to {
+        border-color: white;
+    }
+}
+
+/* Glitch Effect */
+.glitch-text {
+    font-size: 60px;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    background: black;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: glitch 2.5s infinite;
+}
+
+.glitch-text::before {
+    left: 2px;
+    text-shadow: -2px 0 red;
+    animation-duration: 2s;
+}
+
+.glitch-text::after {
+    left: -2px;
+    text-shadow: -2px 0 blue;
+    animation-duration: 1.5s;
+}
+
+@keyframes glitch {
+
+    0%,
+    100% {
+        clip: rect(1px, 9999px, 0, 0);
+    }
+
+    25% {
+        clip: rect(30px, 9999px, 90px, 0);
+    }
+
+    50% {
+        clip: rect(60px, 9999px, 30px, 0);
+    }
+}
+
+/* Neon Lights Effect */
+.neon-text {
+    font-size: 72px;
+    margin: 20px 0;
+    color: #fff;
+    text-align: center;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #ff00ff,
+        0 0 30px #ff00ff,
+        0 0 40px #ff00ff,
+        0 0 50px #ff00ff,
+        0 0 60px #ff00ff;
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Wave Effect */
+.wave-text {
+    display: inline-block;
+    font-size: 50px;
+}
+
+.wave-text span {
+    display: inline-block;
+    animation: wave 1.5s infinite ease-in-out;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.wave-text span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.wave-text span:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.wave-text span:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+@keyframes wave {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
