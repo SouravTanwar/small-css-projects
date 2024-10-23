@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+h1,
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+p {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.section {
+    height: 100vh;
+}
+
+.content {
+    padding: 60px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.parallax {
+    position: relative;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax1 {
+    background-image: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/magical-spring-forest-scenery-during-morning-breeze-free-photo.jpg?w=2210&quality=70');
+}
+
+.parallax2 {
+    background-image: url('https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+.parallax3 {
+    background-image: url('https://images.pexels.com/photos/338936/pexels-photo-338936.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+}
+
+/* Optional Styling for Text */
+.parallax h1 {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.content h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
