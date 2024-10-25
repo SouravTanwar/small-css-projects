@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.loader-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* Rotating Circle */
+.rotating-circle {
+    width: 50px;
+    height: 50px;
+    border: 6px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #3498db;
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Pulsing Dot */
+.pulsing-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #ff6b6b;
+    border-radius: 50%;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: 0.7;
+    }
+}
+
+/* Bouncing Dots */
+.bouncing-dots {
+    display: flex;
+    justify-content: space-around;
+    width: 60px;
+}
+
+.bouncing-dots div {
+    width: 10px;
+    height: 10px;
+    background-color: #4caf50;
+    border-radius: 50%;
+    animation: bounce 0.6s infinite alternate;
+}
+
+.bouncing-dots div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.bouncing-dots div:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+/* Growing Bars */
+.growing-bars {
+    display: flex;
+    justify-content: space-around;
+    width: 80px;
+}
+
+.growing-bars div {
+    width: 8px;
+    height: 20px;
+    background-color: #8e44ad;
+    animation: grow 0.8s infinite ease-in-out;
+}
+
+.growing-bars div:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.growing-bars div:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.growing-bars div:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+@keyframes grow {
+
+    0%,
+    100% {
+        height: 20px;
+    }
+
+    50% {
+        height: 40px;
+    }
+}
+
+/* Loading Wave */
+.wave {
+    display: flex;
+    gap: 4px;
+}
+
+.wave div {
+    width: 5px;
+    height: 20px;
+    background-color: #3498db;
+    animation: wave 0.8s ease-in-out infinite;
+}
+
+.wave div:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.wave div:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.wave div:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.wave div:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.wave div:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+@keyframes wave {
+
+    0%,
+    100% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(1.5);
+    }
+}
