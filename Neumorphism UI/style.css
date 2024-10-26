@@ -1,0 +1,72 @@
+/* General Container Styling */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0e5ec;
+    /* Light, neutral background */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #e0e5ec;
+    box-shadow:
+        9px 9px 16px #bebebe,
+        /* Dark shadow */
+        -9px -9px 16px #ffffff;
+    /* Light shadow */
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Neumorphic Button Styling */
+.card-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #555;
+    background-color: #e0e5ec;
+    border: none;
+    border-radius: 12px;
+    box-shadow:
+        5px 5px 10px #bebebe,
+        /* Dark shadow */
+        -5px -5px 10px #ffffff;
+    /* Light shadow */
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.card-button:hover {
+    box-shadow:
+        inset 5px 5px 10px #bebebe,
+        inset -5px -5px 10px #ffffff;
+}
+
+.card-button:active {
+    box-shadow:
+        inset 5px 5px 10px #bebebe,
+        inset -5px -5px 10px #ffffff;
+}
