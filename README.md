@@ -42,4 +42,4 @@ To view each project locally, clone the repository and open the project folder i
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/css-snippets-repo.git
+   git clone https://github.com/SouravTanwar/small-css-projects.git
