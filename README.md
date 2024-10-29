@@ -1,38 +1,42 @@
 # CSS Snippets Repository
 
-This repository contains small CSS projects and snippets, demonstrating various styles, layouts, animations, and effects. Each project is self-contained and provides a unique way to enhance web design using pure CSS.
+This repository contains various CSS projects and snippets showcasing unique styles, animations, and effects. Each project demonstrates different design concepts, including Neumorphism, Glassmorphism, Animated Text, and more.
 
 ## Table of Contents
 - [Projects](#projects)
-  - [Project 1: Responsive Navigation Bar](#project-1-responsive-navigation-bar)
-  - [Project 2: Animated Button Effects](#project-2-animated-button-effects)
-  - [Project 3: CSS Grid Layout](#project-3-css-grid-layout)
-  - [Project 4: Hover Card Effects](#project-4-hover-card-effects)
-  - [Project 5: CSS Loader Animations](#project-5-css-loader-animations)
-- [How to Use](#how-to-use)
+  - [Animated Text](#animated-text)
+  - [Card Hover Effects](#card-hover-effects)
+  - [Glassmorphism Design](#glassmorphism-design)
+  - [Loader Animations](#loader-animations)
+  - [Neumorphism UI](#neumorphism-ui)
+  - [Parallax Scrolling](#parallax-scrolling)
+- [Getting Started](#getting-started)
 - [Technologies Used](#technologies-used)
 - [License](#license)
 
 ## Projects
 
-### Project 1: Responsive Navigation Bar
-A fully responsive navigation bar using Flexbox, adapting to various screen sizes and switching to a hamburger menu on mobile.
+### Animated Text
+A collection of text animations using pure CSS. Includes typing effects, glitch effect, neon light effect, and wave effect, adding dynamic visual interest to textual content.
 
-### Project 2: Animated Button Effects
-A collection of animated button hover effects using CSS transitions and keyframes to create visually appealing UI elements.
+### Card Hover Effects
+Various card hover effects using CSS transitions and transformations. Each effect demonstrates a different style for enhancing card-based layouts.
 
-### Project 3: CSS Grid Layout
-A showcase of CSS Grid, demonstrating how to build complex, responsive layouts using grid areas, columns, and rows.
+### Glassmorphism Design
+A glassmorphism effect using CSS, giving elements a frosted glass-like appearance. Ideal for UI designs where semi-transparency and background blur add elegance.
 
-### Project 4: Hover Card Effects
-CSS hover effects applied to image or content cards, using transforms, transitions, and shadows for a modern UI feel.
+### Loader Animations
+A set of CSS loader animations, including circle waves and pulsing dots. These loaders are lightweight and customizable for any web application.
 
-### Project 5: CSS Loader Animations
-A variety of CSS-based loading spinners and animations, including rotating, bouncing, and fading effects.
+### Neumorphism UI
+A Neumorphism-inspired UI design, creating soft, extruded elements with shadow effects, giving a 3D appearance to flat designs.
 
-## How to Use
+### Parallax Scrolling
+A parallax scrolling effect, adding depth to web designs by making background and foreground elements scroll at different speeds.
 
-To try out the snippets and projects in this repository, simply clone the repo and open any project folder in your browser.
+## Getting Started
+
+To view each project locally, clone the repository and open the project folder in your browser.
 
 ### Steps:
 
