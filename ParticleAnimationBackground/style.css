@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #0d0d0d;
+    color: white;
+}
+
+/* Particle Background Container */
+.particle-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    z-index: 10;
+    font-size: 2.5rem;
+}
+
+/* Particle Animation */
+.particle-background::before,
+.particle-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 1px, transparent 1px), radial-gradient(circle, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+    background-size: 60px 60px;
+    animation: moveParticles 12s linear infinite;
+    opacity: 0.8;
+}
+
+.particle-background::after {
+    animation-delay: 6s;
+    opacity: 0.5;
+}
+
+@keyframes moveParticles {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+
+    50% {
+        transform: translateY(-20px) translateX(10px);
+    }
+
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
