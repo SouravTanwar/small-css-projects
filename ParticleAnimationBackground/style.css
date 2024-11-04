@@ -16,7 +16,6 @@ html {
     color: white;
 }
 
-/* Particle Background Container */
 .particle-background {
     position: relative;
     width: 100%;
@@ -32,7 +31,6 @@ h1 {
     font-size: 2.5rem;
 }
 
-/* Particle Animation */
 .particle-background::before,
 .particle-background::after {
     content: "";
