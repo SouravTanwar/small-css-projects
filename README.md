@@ -34,6 +34,10 @@ A Neumorphism-inspired UI design, creating soft, extruded elements with shadow e
 ### Parallax Scrolling
 A parallax scrolling effect, adding depth to web designs by making background and foreground elements scroll at different speeds.
 
+### Wave Animation
+
+### Particle Animation Background
+
 ## Getting Started
 
 To view each project locally, clone the repository and open the project folder in your browser.
